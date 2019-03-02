@@ -1,0 +1,10 @@
+server:
+  port: 18080
+swagger:
+  enabled: true
+  version: 1.0.0
+  contact: 白风和
+  title: Swagger Samples RESTful APIs
+  base-package: com.github.avancee.samples.controller
+  description: 开箱即用的swagger-spring-boot-starter
+  terms-of-service-url: https://github.com/Avancee
