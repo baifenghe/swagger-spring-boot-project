@@ -3,8 +3,6 @@ package com.github.avancee.swagger.properties;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.io.Serializable;
-
 /**
  * {@link ConfigurationProperties} for configuring Swagger.
  *
@@ -13,42 +11,40 @@ import java.io.Serializable;
  */
 @Data
 @ConfigurationProperties("swagger")
-public class SwaggerProperties implements Serializable {
-
-    private static final long serialVersionUID = -643260829749539015L;
+public class SwaggerProperties {
 
     /**
-     * 是否开启swagger
+     * switch of swagger
      */
     private Boolean enabled = false;
 
     /**
-     * swagger解析路径
+     * which package while swagger scan
      */
-    private String basePackage;
+    private String basePackage = "";
 
     /**
-     * 标题
+     * title
      */
-    private String title;
+    private String title = "";
 
     /**
-     * 描述
+     * description
      */
-    private String description;
+    private String description = "";
 
     /**
-     * 服务条款地址
+     * terms of service url
      */
-    private String termsOfServiceUrl;
+    private String termsOfServiceUrl = "";
 
     /**
-     * 联系人
+     * contact
      */
-    private String contact;
+    private String contact = "";
 
     /**
-     * 版本
+     * api document version
      */
-    private String version;
+    private String version = "1.0.0";
 }
